@@ -1,186 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Professional Python Developer Portfolio">
-  <meta name="author" content="Pradeep">
-  <title>My Profile</title>
-  <!-- Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
-      color: #1f2937;
-    }
-    .navbar {
-      backdrop-filter: blur(10px);
-      background: rgba(17, 24, 39, 0.9);
-    }
-    .header-image {
-      background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c') no-repeat center center;
-      background-size: cover;
-      height: 500px;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    }
-    .featurette-image {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .featurette-image:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    .featurette {
-      background: white;
-      border-radius: 1rem;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .featurette:hover {
-      transform: translateY(-5px);
-    }
-    footer {
-      background: linear-gradient(90deg, #1f2937, #111827);
-      color: white;
-    }
-    .nav-link {
-      position: relative;
-    }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -4px;
-      left: 0;
-      background-color: #10b981;
-      transition: width 0.3s ease;
-    }
-    .nav-link:hover::after {
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar fixed-top py-4">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <a class="text-2xl font-bold text-white" href="#">My Profile</a>
-      <div class="space-x-6 hidden md:flex">
-        <a href="#about" class="text-white nav-link hover:text-emerald-400">About</a>
-        <a href="#services" class="text-white nav-link hover:text-emerald-400">Project 1</a>
-        <a href="#contact" class="text-white nav-link hover:text-emerald-400">Project 2</a>
-      </div>
-      <button class="md:hidden text-white" id="navbar-toggle">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
+<!-- Office 365 Administrator Section -->
+<div class="featurette mb-12" id="o365-admin">
+  <div class="flex flex-col md:flex-row items-center">
+    <div class="md:w-1/3">
+      <img class="featurette-image rounded-full w-48 h-48 object-cover" src="https://cdn-icons-png.flaticon.com/512/5968/5968526.png" alt="Office 365 Icon">
     </div>
-    <div class="hidden md:hidden bg-gray-900" id="navbar-collapse">
-      <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-        <a href="#about" class="text-white hover:text-emerald-400">About</a>
-        <a href="#services" class="text-white hover:text-emerald-400">Project 1</a>
-        <a href="#contact" class="text-white hover:text-emerald-400">Project 2</a>
+    <div class="md:w-2/3 mt-6 md:mt-0 md:pl-8">
+      <h2 class="text-3xl font-semibold">Office 365 Administrator <span class="text-gray-500">Professional Summary</span></h2>
+      <p class="text-lg text-gray-700 mt-4">
+        As a skilled Office 365 Administrator with a strong background in IT support and service desk operations, I specialize in managing Microsoft 365 environments to ensure secure, efficient, and collaborative digital workspaces. My expertise spans user management, security implementation, automation, and troubleshooting across enterprise-level infrastructures.
+      </p>
+      <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+        <li><strong>User & Access Management:</strong> Administered user accounts, permissions, and licenses across Microsoft 365 and Active Directory.</li>
+        <li><strong>Security & Compliance:</strong> Enforced MFA, DLP, and endpoint security protocols while ensuring regulatory compliance.</li>
+        <li><strong>Collaboration Tools:</strong> Configured Teams, SharePoint, Outlook, and Exchange for seamless communication.</li>
+        <li><strong>Troubleshooting & Support:</strong> Resolved software, hardware, and network issues across desktop and cloud environments.</li>
+        <li><strong>Automation:</strong> Used PowerShell to automate tasks and improve operational efficiency.</li>
+        <li><strong>Training & Onboarding:</strong> Delivered user training and onboarding to enhance productivity.</li>
+        <li><strong>Backup & Recovery:</strong> Designed and maintained data protection strategies.</li>
+      </ul>
+      <p class="text-lg text-gray-700 mt-6"><strong>Technical Skills:</strong></p>
+      <div class="grid grid-cols-2 gap-4 text-gray-600 mt-2">
+        <span>Microsoft 365</span>
+        <span>SharePoint</span>
+        <span>Teams</span>
+        <span>Outlook</span>
+        <span>Exchange</span>
+        <span>Power Apps</span>
+        <span>Active Directory</span>
+        <span>Azure AD</span>
+        <span>PowerShell</span>
+        <span>Power Automate</span>
+        <span>Microsoft Power BI</span>
+        <span>Endpoint Security</span>
       </div>
     </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="header-image flex items-center">
-    <div class="container mx-auto px-4 text-center text-white">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">Python Developer</h1>
-      <h2 class="text-xl md:text-2xl font-light"># Eat Pray and Code</h2>
-    </div>
-  </header>
-
-  <!-- Page Content -->
-  <div class="container mx-auto px-4 py-12">
-    <!-- About Section -->
-    <div class="featurette mb-12" id="about">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3">
-          <img class="featurette-image rounded-full w-48 h-48 object-cover" src="mypic_for_git-removebg-preview.png" alt="Profile Picture">
-        </div>
-        <div class="md:w-2/3 mt-6 md:mt-0 md:pl-8">
-          <h2 class="text-3xl font-semibold">Hello, <span class="text-gray-500">a bit about me:</span></h2>
-          <p class="text-lg text-gray-700 mt-4">
-            I love coding. I'm a Python developer with a growing interest in data science. I'm currently exploring R language and continuously upgrading my technical skills. This portfolio will evolve as I do.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 1 -->
-    <div class="featurette mb-12" id="services">
-      <div class="flex flex-col md:flex-row-reverse items-center">
-        <div class="md:w-1/3">
-          <img class="featurette-image rounded-full w-48 h-48 object-cover" src="https://4.bp.blogspot.com/-8xqOqAdqLaQ/V1AgHje8beI/AAAAAAAABAM/jo8WG5BAHJY3KNB47-pXl0KpX-1ADuyTgCKgB/s1600/web-data-crawling1.jpg" alt="Web Scraping">
-        </div>
-        <div class="md:w-2/3 mt-6 md:mt-0 md:pr-8">
-          <h2 class="text-3xl font-semibold">Project 01: <span class="text-gray-500">Web Scraping</span></h2>
-          <p class="text-lg text-gray-700 mt-4">
-            Scraped IMDB's "Born Today" page to extract celebrity data including name, image, profession, and best work. Performed sentiment analysis on Twitter using Tweepy and TextBlob. Faced challenges with dynamic content and overcame them using Selenium.
-          </p>
-          <p class="text-gray-600 mt-2">
-            <strong>Tools Used:</strong> Python 2.7, BeautifulSoup, Selenium, Tweepy, TextBlob
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="featurette mb-12" id="contact">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3">
-          <img class="featurette-image rounded-full w-48 h-48 object-cover" src="https://s3.amazonaws.com/nicholasyager.com/assets/2015-02-13/wordcloud_freq_tweet-001.png" alt="Twitter Sentiment">
-        </div>
-        <div class="md:w-2/3 mt-6 md:mt-0 md:pl-8">
-          <h2 class="text-3xl font-semibold">Project 02: <span class="text-gray-500">Twitter Sentiment Analysis</span></h2>
-          <p class="text-lg text-gray-700 mt-4">
-            Mined Twitter data using Tweepy and TextBlob to analyze sentiment. Also built a Reddit bot using Reddit API. The project was developed using Django framework and source code is available on GitHub.
-          </p>
-          <p class="text-gray-600 mt-2">
-            <strong>Tools Used:</strong> Django, Tweepy, TextBlob, Reddit API
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="py-8 text-center">
-      <p class="text-lg">Email: <strong>thenineplanetsgroove@gmail.com</strong></p>
-      <p class="text-lg">Twitter: <a href="https://twitter.com/galaxyofmonks" class="text-emerald-400 hover:underline">@galaxyofmonks</a></p>
-    </footer>
   </div>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    // Toggle mobile menu
-    $('#navbar-toggle').click(function() {
-      $('#navbar-collapse').toggleClass('hidden');
-    });
-    // Smooth scroll for anchor links
-    $('a[href*="#"]').click(function(event) {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        event.preventDefault();
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - 70
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  </script>
-</body>
-</html>
+</div>
