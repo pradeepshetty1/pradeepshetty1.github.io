@@ -1,187 +1,91 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Professional Python Developer Portfolio">
-  <meta name="author" content="Pradeep">
-  <title>My Profile</title>
-  <!-- Tailwind CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O365 Administrator and Python Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
-      color: #1f2937;
-    }
-    .navbar {
-      backdrop-filter: blur(10px);
-      background: rgba(17, 24, 39, 0.9);
-    }
-    .header-image {
-      background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c') no-repeat center center;
-      background-size: cover;
-      height: 500px;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    }
-    .featurette-image {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .featurette-image:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    .featurette {
-      background: white;
-      border-radius: 1rem;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .featurette:hover {
-      transform: translateY(-5px);
-    }
-    footer {
-      background: linear-gradient(90deg, #1f2937, #111827);
-      color: white;
-    }
-    .nav-link {
-      position: relative;
-    }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -4px;
-      left: 0;
-      background-color: #10b981;
-      transition: width 0.3s ease;
-    }
-    .nav-link:hover::after {
-      width: 100%;
-    }
-  </style>
 </head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar fixed-top py-4">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <a class="text-2xl font-bold text-white" href="#">My Profile</a>
-      <div class="space-x-6 hidden md:flex">
-        <a href="#about" class="text-white nav-link hover:text-emerald-400">About</a>
-        <a href="#services" class="text-white nav-link hover:text-emerald-400">Project 1</a>
-        <a href="#contact" class="text-white nav-link hover:text-emerald-400">Project 2</a>
-      </div>
-      <button class="md:hidden text-white" id="navbar-toggle">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-    </div>
-    <div class="hidden md:hidden bg-gray-900" id="navbar-collapse">
-      <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-        <a href="#about" class="text-white hover:text-emerald-400">About</a>
-        <a href="#services" class="text-white hover:text-emerald-400">Project 1</a>
-        <a href="#contact" class="text-white hover:text-emerald-400">Project 2</a>
-      </div>
-    </div>
-  </nav>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed tracking-wide flex flex-col">
 
   <!-- Header -->
-  <header class="header-image flex items-center">
-    <div class="container mx-auto px-4 text-center text-white">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">Python Developer</h1>
-      <h2 class="text-xl md:text-2xl font-light"># Eat Pray and Code</h2>
+  <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-12 shadow">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">O365 Administrator & Python Developer</h1>
+      <p class="text-lg md:text-xl">Empowering automation and collaboration through Microsoft 365 and Python</p>
     </div>
   </header>
 
-  <!-- Page Content -->
-  <div class="container mx-auto px-4 py-12">
-    <!-- About Section -->
-    <div class="featurette mb-12" id="about">
+  div class="featurette mb-12" id="about">
       <div class="flex flex-col md:flex-row items-center">
         <div class="md:w-1/3">
           <img class="featurette-image rounded-full w-48 h-48 object-cover" src="mypic_for_git-removebg-preview.png" alt="Profile Picture">
+      </div>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-6">About Me</h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center">
+        I'm a passionate Python developer and Office 365 administrator with a strong focus on automation, scripting, and cloud collaboration. I enjoy solving problems using PowerShell and Python, and I'm always eager to learn new technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-6">Work Experience</h2>
+      <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-bold mb-2">Office 365 Administrator</h3>
+        <p class="text-gray-700 mb-4">
+          Managed Microsoft 365 services including Exchange Online, SharePoint, and Teams. Administered user accounts, licenses, and security policies. Ensured compliance and governance across the organization.
+        </p>
+        <h4 class="text-xl font-semibold mb-2">PowerShell Automation</h4>
+        <p class="text-gray-700">
+          Developed PowerShell scripts to automate administrative tasks such as user provisioning, mailbox management, and reporting. Improved efficiency and reduced manual workload through scripting and scheduled jobs.
+        </p>
+        <p class="text-gray-600 mt-4"><strong>Skills:</strong> Microsoft 365 Admin Center, Exchange Online, SharePoint, Teams, PowerShell, Security & Compliance Center</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-6">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Web Scraping</h3>
+          <p class="text-gray-700">
+            Scraped IMDB's "Born Today" page to extract celebrity data. Used Selenium to handle dynamic content and performed sentiment analysis on Twitter using Tweepy and TextBlob.
+          </p>
         </div>
-        <div class="md:w-2/3 mt-6 md:mt-0 md:pl-8">
-          <h2 class="text-3xl font-semibold">Hello, <span class="text-gray-500">a bit about me:</span></h2>
-          <p class="text-lg text-gray-700 mt-4">
-            I love coding. I'm a Python developer with a growing interest in data science. I'm currently exploring R language and continuously upgrading my technical skills. This portfolio will evolve as I do.
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Twitter Sentiment Analysis</h3>
+          <p class="text-gray-700">
+            Mined Twitter data using Tweepy and TextBlob to analyze sentiment. Built a Reddit bot using Reddit API and developed the project using Django framework.
           </p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Project 1 -->
-    <div class="featurette mb-12" id="services">
-      <div class="flex flex-col md:flex-row-reverse items-center">
-        <div class="md:w-1/3">
-          <img class="featurette-image rounded-full w-48 h-48 object-cover" src="https://4.bp.blogspot.com/-8xqOqAdqLaQ/V1AgHje8beI/AAAAAAAABAM/jo8WG5BAHJY3KNB47-pXl0KpX-1ADuyTgCKgB/s1600/web-data-crawling1.jpg" alt="Web Scraping">
-        </div>
-        <div class="md:w-2/3 mt-6 md:mt-0 md:pr-8">
-          <h2 class="text-3xl font-semibold">Project 01: <span class="text-gray-500">Web Scraping</span></h2>
-          <p class="text-lg text-gray-700 mt-4">
-            Scraped IMDB's "Born Today" page to extract celebrity data including name, image, profession, and best work. Performed sentiment analysis on Twitter using Tweepy and TextBlob. Faced challenges with dynamic content and overcame them using Selenium.
-          </p>
-          <p class="text-gray-600 mt-2">
-            <strong>Tools Used:</strong> Python 2.7, BeautifulSoup, Selenium, Tweepy, TextBlob
-          </p>
-        </div>
-      </div>
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+      <p class="text-lg text-gray-700 mb-2">Email: <strong>thenineplanetsgroove@gmail.com</strong></p>
+      <p class="text-lg text-gray-700">Twitter: <a href="https://twitter.com/galaxyofmonks" class="text-blue-600 hover:underline">@galaxyofmonks</a></p>
     </div>
+  </section>
 
-    <!-- Project 2 -->
-    <div class="featurette mb-12" id="contact">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3">
-          <img class="featurette-image rounded-full w-48 h-48 object-cover" src="https://s3.amazonaws.com/nicholasyager.com/assets/2015-02-13/wordcloud_freq_tweet-001.png" alt="Twitter Sentiment">
-        </div>
-        <div class="md:w-2/3 mt-6 md:mt-0 md:pl-8">
-          <h2 class="text-3xl font-semibold">Project 02: <span class="text-gray-500">Twitter Sentiment Analysis</span></h2>
-          <p class="text-lg text-gray-700 mt-4">
-            Mined Twitter data using Tweepy and TextBlob to analyze sentiment. Also built a Reddit bot using Reddit API. The project was developed using Django framework and source code is available on GitHub.
-          </p>
-          <p class="text-gray-600 mt-2">
-            <strong>Tools Used:</strong> Django, Tweepy, TextBlob, Reddit API
-          </p>
-        </div>
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center">
+    <p>&copy; 2024 O365 Administrator and Python Developer. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="py-8 text-center">
-      <p class="text-lg">Email: <strong>thenineplanetsgroove@gmail.com</strong></p>
-      <p class="text-lg">Twitter: <a href="https://twitter.com/galaxyofmonks" class="text-emerald-400 hover:underline">@galaxyofmonks</a></p>
-    </footer>
-  </div>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    // Toggle mobile menu
-    $('#navbar-toggle').click(function() {
-      $('#navbar-collapse').toggleClass('hidden');
-    });
-    // Smooth scroll for anchor links
-    $('a[href*="#"]').click(function(event) {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        event.preventDefault();
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - 70
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  </script>
 </body>
 </html>
