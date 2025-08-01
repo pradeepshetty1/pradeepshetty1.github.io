@@ -1,205 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pro">
+  <meta name="author" content="Pradeep">
+  <title>My Profile</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pro">
-    <meta name="author" content="Pradeep">
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>My Profile</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .navbar-inverse {
+      background-color: #343a40;
+      border-color: #343a40;
+    }
+    .navbar-inverse .navbar-brand, .navbar-inverse .nav > li > a {
+      color: #fff;
+    }
+    .header-image {
+      background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c') no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+    .headline h1 {
+      font-size: 3.5em;
+      font-weight: 700;
+    }
+    .headline h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+    .featurette {
+      margin: 60px 0;
+    }
+    .featurette-heading {
+      font-size: 2em;
+      margin-top: 0;
+    }
+    .featurette-image {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #ffc107;
+    }
+    hr.featurette-divider {
+      border-top: 2px solid #dee2e6;
+    }
+  </style>
 </head>
 
 <body>
 
-
-
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse " role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Home</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Project1</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Project2</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        
-        <!-- /.container -->
-    </nav>
-
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <h1>Python Developer</h1>
-                <h2># Eat Pray and Code</h2>
-            </div>
-        </div>
-    </header>
-
-    <!-- Page Content -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-
-        <hr class="featurette-divider">
-
-        <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right"
-             src="mypic.png">
-            
-            <h2 class="featurette-heading">Hello,
-                <span class="text-muted">a bit about me:</span>
-            </h2>
-            <p class="lead">
-              
-​</p>
-<p>
-    <h4>
-        I love coding.
-        I am a  python developer and would like to be a part of data science.
-        I am also studying about r language.
-        I will update my portfolio as the time goes by however for the time being I am trying to upgrade my technical
-        skills.
-        
-
-
-    </h4>
-
-</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="https://4.bp.blogspot.com/-8xqOqAdqLaQ/V1AgHje8beI/AAAAAAAABAM/jo8WG5BAHJY3KNB47-pXl0KpX-1ADuyTgCKgB/s1600/web-data-crawling1.jpg">
-            <h2 class="featurette-heading">Projects 
-                <span class="text-muted">Project | 01 Web Scraping </span>
-            </h2>
-            <p class="lead"> <h5>Kindly note : That web scraping was performed on IMDB website only for educational purpose.
-Problem Statement
-IMDB provides a list of celebrities born on the current date. Below is the link: http://m.imdb.com/feature/bornondate
-Get the list of these celebrities from this webpage using web scraping (the ones that are displayed i.e top 10). You have to extract the below information:
-1. Name of the celebrity
-2. Celebrity Image
-3. Profession
-4. Best Work
-Once you have this list, run a sentiment analysis on twitter for each celebrity and finally the output should be in the below format
-1. Name of the celebrity:
-2. Celebrity Image:
-3. Profession:
-4. Best Work:
-5. Overall Sentiment on Twitter: Positive, Negative or Neutral
-Hint: Use IMDB scrapping sample example as reference for scraping the mentioned web page. For sentiment analysis use the Twitter sentiment code as reference.
-Python version 2.7
-Tools and Packages Used
-• Version: Python 2.7[VERY IMPORTANT]
-Tweepy: An easy-to-use Python library for accessing the Twitter API.
-Text Blob:
-Text Blob is a Python (2 and 3) library for processing textual data. It provides a simple API for diving into common natural language processing (NLP) tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
-• Beautiful Soup [Symbol] Beautiful Soup provides a few simple methods and Pythonic idioms for navigating, searching, and modifying a parse tree using Python parsers like lxml and html5lib. It automatically converts incoming documents to Unicode and outgoing documents to UTF-8. Here's the documentation.
-• Selenium [Symbol] The web driver kit emulates a web-browser (I chose chrome driver) and executes the JS scripts to load the dynamic content.
-Challenges Faced during the project
-Well as being a complete newbie in programming it took more time to understand the programming concept but the time spent for this project was worth every second.
-I understand it took little longer time for me to complete the project .Initially when I started working on IMDB project I used just beautiful soup to scrape the content from IMDB website however I was unable to scrape the required content from the website as there was dynamic script used for images and other contents of the website.
-Did thought of using regular expression to scrape the information from IMDB but still because of JavaScript I couldn’t scrape the required details from the website.
-Did took help of “Edureka” team to know what needs to be done in order to scrape the JavaScript content from IMDB website . As per the suggestion from Edureka team downloaded the selenium driver and also went ahead and installed the chrome driver (resources used to understand the functionality of selenium driver was YouTube and also Selenium web driver website: http://www.seleniumhq.org/docs/01_introducing_selenium.jsp
-Other references:
-Reference: http://fruchter.co/post/53164489086/python-headless-web-browser-scraping-on-amazon
-Used text blob library to evaluate the sentiment analysis of tweets:
-Reference: https://textblob.readthedocs.io/en/dev/</h5></p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="https://s3.amazonaws.com/nicholasyager.com/assets/2015-02-13/wordcloud_freq_tweet-001.png">
-            <h2 class="featurette-heading">Project | 02 Twitter Sentiment Analysis 
-                Mining Twitter Data with Python
-                <span class="text-muted">Worked on Django mainframe</span>
-            </h2>
-            <p class="lead"> 
-                <h4>
-                I dont call myself Django webframe Professional however I wish to master the  django framework someday soon
-                I think Django is one of the awesome web framework to work with...</h4>
-
-                <h5>Twitter Sentiment Analysis ​Mining Twitter Data with Python:
- 
-                    
-                    Python packages used Tweepy  and Textblob
-                    Need Twitter API so that you can fetch the tweets for any subject.
-                    Also created Reddit bot using reddit API
-                    Source Code is uploaded in GIT HUB.</h5>
-
-            
-            </p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p><strong> Email:thenineplanetsgroove@gmail.com</strong></p>
-                    <p><strong><a href="https://twitter.com/galaxyofmonks">twitter</a>
-
-
-                        </strong></p>
-
-
-                </div>
-            </div>
-        </footer>
-
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">My Profile</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Project 1</a></li>
+          <li><a href="#contact">Project 2</a></li>
+        </ul>
+      </div>
     </div>
-    <!-- /.container -->
+  </nav>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+  <!-- Header -->
+  <header class="header-image">
+    <div class="headline container">
+      <div>
+        <h1>Python Developer</h1>
+        <h2># Eat Pray and Code</h2>
+      </div>
+    </div>
+  </header>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- Page Content -->
+  <div class="container">
+
+    <hr class="featurette-divider">
+
+    <!-- About Section -->
+    <div class="featurette" id="about">
+      <img class="featurette-image img-circle img-responsive pull-right" src="mypic.png" alt="Profile Picture">
+      <h2 class="featurette-heading">Hello, <span class="text-muted">a bit about me:</span></h2>
+      <p class="lead">
+        I love coding. I'm a Python developer with a growing interest in data science. I'm currently exploring R language and continuously upgrading my technical skills. This portfolio will evolve as I do.
+      </p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Project 1 -->
+    <div class="featurette" id="services">
+      <img class="featurette-image img-circle img-responsive pull-left" src="https://4.bp.blogspot.com/-8xqOqAdqLaQ/V1AgHje8beI/AAAAAAAABAM/jo8WG5BAHJY3KNB47-pXl0KpX-1ADuyTgCKgB/s1600/web-data-crawling1.jpg" alt="Web Scraping">
+      <h2 class="featurette-heading">Project 01: <span class="text-muted">Web Scraping</span></h2>
+      <p class="lead">
+        Scraped IMDB's "Born Today" page to extract celebrity data including name, image, profession, and best work. Performed sentiment analysis on Twitter using Tweepy and TextBlob. Faced challenges with dynamic content and overcame them using Selenium.
+      </p>
+      <p>
+        <strong>Tools Used:</strong> Python 2.7, BeautifulSoup, Selenium, Tweepy, TextBlob
+      </p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Project 2 -->
+    <div class="featurette" id="contact">
+      <img class="featurette-image img-circle img-responsive pull-right" src="https://s3.amazonaws.com/nicholasyager.com/assets/2015-02-13/wordcloud_freq_tweet-001.png" alt="Twitter Sentiment">
+      <h2 class="featurette-heading">Project 02: <span class="text-muted">Twitter Sentiment Analysis</span></h2>
+      <p class="lead">
+        Mined Twitter data using Tweepy and TextBlob to analyze sentiment. Also built a Reddit bot using Reddit API. The project was developed using Django framework and source code is available on GitHub.
+      </p>
+      <p>
+        <strong>Tools Used:</strong> Django, Tweepy, TextBlob, Reddit API
+      </p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Footer -->
+    <footer>
+      <p>Email: <strong>thenineplanetsgroove@gmail.com</strong></p>
+      <p>Twitter: <a href="https://twitter.com/galaxyofmonks">@galaxyofmonks</a></p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
