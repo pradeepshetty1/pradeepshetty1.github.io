@@ -3,85 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>O365 Administrator and Python Developer</title>
+  <title>O365 Admin & Python Dev | Pradeep Shetty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d01e4953.js" crossorigin="anonymous"></script>
   <style>
-    .fade-in {
-      animation: fadeIn 1.5s ease-in-out;
-    }
+    body { font-family: 'Inter', sans-serif; }
+    .fade-in { animation: fadeIn 1.2s ease-in-out; }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
+    .glass-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed tracking-wide flex flex-col">
+<body class="bg-gradient-to-b from-gray-100 to-white text-gray-800 tracking-wide flex flex-col">
 
   <!-- Header -->
-  <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-12 shadow-lg">
+  <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-16 shadow-lg">
     <div class="container mx-auto px-6 text-center fade-in">
-      <h1 class="text-4xl md:text-5xl font-bold mb-2">O365 Administrator & Python Developer</h1>
-      <p class="text-lg md:text-xl">Empowering automation and collaboration through Microsoft 365 and Python</p>
+      <h1 class="text-5xl font-bold mb-3">Pradeep Shetty</h1>
+      <p class="text-xl font-medium">O365 Administrator & Python Developer</p>
+      <p class="mt-2 text-sm">Solving business problems with scripts, cloud, and caffeine ☕</p>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-12 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3 mb-6 md:mb-0">
-          <img class="rounded-full w-48 h-48 object-cover mx-auto shadow-lg" src="mypic_for_git-removebg-preview.png" alt="Profile Picture">
-        </div>
-        <div class="md:w-2/3 md:pl-8 text-center md:text-left">
-          <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-          <p class="text-lg text-gray-700">
-            I'm a passionate Python developer and Office 365 administrator with a strong focus on automation, scripting, and cloud collaboration. I enjoy solving problems using PowerShell and Python, and I'm always eager to learn new technologies.
-          </p>
-        </div>
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/3">
+        <img class="rounded-full w-52 h-52 object-cover mx-auto shadow-xl border-4 border-blue-600" src="mypic_for_git-removebg-preview.png" alt="Profile Picture">
+      </div>
+      <div class="md:w-2/3 text-center md:text-left">
+        <h2 class="text-4xl font-semibold text-blue-700 mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed">
+          I’m a Python developer and Office 365 admin with a love for automating things and building secure, scalable systems. From PowerShell pipelines to cloud-based automation — I bring code clarity and coffee-fueled efficiency to every project.
+        </p>
       </div>
     </div>
   </section>
 
-   <!-- Work Experience Section -->
-  <section id="experience" class="py-12 bg-gray-50">
+  <!-- Experience Section -->
+  <section id="experience" class="py-16 bg-gray-100">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-center mb-6">Work Experience</h2>
-      <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold mb-2 text-blue-700">Office 365 Administrator</h3>
-        <p class="text-gray-700 mb-2">• <strong>Microsoft 365 Ecosystem Management:</strong> Oversaw the administration of core services including Exchange Online, SharePoint, Microsoft Teams, OneDrive, and the Microsoft 365 Admin Center. Ensured high availability, performance, and user satisfaction across all platforms.</p>
-        <p class="text-gray-700 mb-2">• <strong>User Lifecycle & Licensing:</strong> Managed user provisioning, deprovisioning, and license assignments using both GUI and PowerShell. Streamlined onboarding and offboarding processes while maintaining accurate access controls and audit trails.</p>
-        <p class="text-gray-700 mb-2">• <strong>Security & Compliance Enforcement:</strong> Implemented robust security policies such as Multi-Factor Authentication (MFA), Conditional Access, and Data Loss Prevention (DLP). Monitored and enforced compliance using Microsoft’s Security & Compliance Center, ensuring alignment with GDPR, ISO, and internal governance standards.</p>
-        <p class="text-gray-700 mb-2">• <strong>Collaboration Enablement:</strong> Configured and maintained Microsoft Teams channels, SharePoint sites, and Outlook mailboxes to foster cross-functional collaboration. Supported remote work initiatives by enabling secure access to cloud resources.</p>
-        <p class="text-gray-700 mb-2">• <strong>Monitoring & Reporting:</strong> Utilized Microsoft 365 reporting tools and PowerShell scripts to generate insights on usage, license consumption, and security events. Provided actionable recommendations to leadership based on data trends.</p>
-
-        <h4 class="text-xl font-semibold mb-2 text-blue-600">⚙️ PowerShell Automation</h4>
-        <p class="text-gray-700 mb-2">To enhance operational efficiency and reduce manual overhead, I developed and maintained a suite of PowerShell scripts tailored to Microsoft 365 administration.</p>
-        <h4 class="text-xl font-semibold mb-2 text-blue-600">🔹 Automation Achievements</h4>
-        <p class="text-gray-700 mb-2">• <strong>User Provisioning & Deprovisioning:</strong> Automated the creation of user accounts, mailbox setup, license assignment, and group memberships. Reduced onboarding time by over 60% and minimized human error.</p>
-        <p class="text-gray-700 mb-2">• <strong>Mailbox & Distribution List Management:</strong> Created scripts to manage shared mailboxes, distribution groups, and mailbox permissions. Enabled bulk updates and scheduled maintenance tasks.</p>
-        <p class="text-gray-700 mb-2">• <strong>Compliance & Audit Reporting:</strong> Built custom scripts to extract audit logs, track login activity, and monitor policy violations. Integrated reporting into scheduled jobs for weekly compliance reviews.</p>
-        <p class="text-gray-700 mb-2">• <strong>License Optimization:</strong> Automated license usage tracking and cleanup of inactive accounts. Helped reduce unnecessary license costs and improve resource allocation.</p>
-        <p class="text-gray-700 mb-2">• <strong>Scheduled Jobs & Alerts:</strong> Deployed scheduled PowerShell jobs to monitor service health, send alerts for critical events, and perform routine maintenance tasks.</p>
+      <h2 class="text-4xl font-semibold text-center text-blue-800 mb-12">Experience</h2>
+      <div class="max-w-4xl mx-auto glass-card p-8 rounded-2xl shadow-lg fade-in">
+        <h3 class="text-2xl font-bold text-blue-700 mb-4">O365 Administrator</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-3">
+          <li><strong>Microsoft 365 Ecosystem:</strong> Managed Exchange, SharePoint, Teams, OneDrive for seamless collaboration.</li>
+          <li><strong>User Lifecycle:</strong> Automated onboarding/offboarding with PowerShell. Bye-bye spreadsheets!</li>
+          <li><strong>Security:</strong> Enforced MFA, DLP, Conditional Access. Aligned with ISO & GDPR standards.</li>
+          <li><strong>Monitoring:</strong> Built PowerShell reports for license usage, activity logs, and alerts.</li>
+        </ul>
+        <h4 class="text-xl font-semibold mt-6 text-blue-600">⚙️ PowerShell Automation</h4>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+          <li>Provisioned users, set mailbox policies, and automated license assignments.</li>
+          <li>Extracted audit logs and built weekly compliance snapshots.</li>
+          <li>Saved $$$ by identifying inactive accounts & optimizing licenses.</li>
+        </ul>
       </div>
     </div>
   </section>
-
 
   <!-- Projects Section -->
-  <section id="projects" class="py-12 bg-white">
+  <section id="projects" class="py-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-center mb-6">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
-          <h3 class="text-xl font-bold mb-2 text-blue-700">Web Scraping</h3>
-          <p class="text-gray-700">
-            Scraped IMDB's "Born Today" page to extract celebrity data. Used Selenium to handle dynamic content and performed sentiment analysis on Twitter using Tweepy and TextBlob.
+      <h2 class="text-4xl font-semibold text-center text-blue-800 mb-12">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass-card p-6 rounded-xl shadow-md">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2">Web Scraping (IMDB + Twitter)</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Scraped IMDB’s “Born Today” page and performed sentiment analysis using Tweepy & TextBlob. Integrated Selenium to handle dynamic elements.
           </p>
         </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
-          <h3 class="text-xl font-bold mb-2 text-blue-700">Twitter Sentiment Analysis</h3>
-          <p class="text-gray-700">
-            Mined Twitter data using Tweepy and TextBlob to analyze sentiment. Built a Reddit bot using Reddit API and developed the project using Django framework.
+        <div class="glass-card p-6 rounded-xl shadow-md">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2">Twitter Sentiment Bot + Django</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Created a Twitter analysis bot with Tweepy. Deployed insights through a Django-based web app. Also integrated Reddit bot using PRAW.
           </p>
         </div>
       </div>
@@ -89,17 +95,36 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-12 bg-gray-50">
+  <section id="contact" class="py-16 bg-gray-100">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-6">Contact</h2>
-      <p class="text-lg text-gray-700 mb-2">Email: <strong>thenineplanetsgroove@gmail.com</strong></p>
-      <p class="text-lg text-gray-700">Twitter: <a href="https://twitter.com/galaxyofmonks" class="text-blue-600 hover:underline">@galaxyofmonks</a></p>
+      <h2 class="text-4xl font-semibold text-blue-800 mb-6">Contact</h2>
+      <div class="text-lg text-gray-700 space-y-3">
+        <p><i class="fas fa-envelope text-blue-600 mr-2"></i><strong>thenineplanetsgroove@gmail.com</strong></p>
+        <p>
+          <i class="fab fa-twitter text-blue-600 mr-2"></i>
+          <a href="https://twitter.com/galaxyofmonks" class="text-blue-600 hover:underline" target="_blank">@galaxyofmonks</a>
+        </p>
+        <p>
+          <i class="fab fa-github text-gray-800 mr-2"></i>
+          <a href="https://github.com/pradeepshetty1" class="text-blue-600 hover:underline" target="_blank">github.com/pradeepshetty1</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Website Link -->
+  <section class="py-10 bg-white text-center fade-in">
+    <div class="container mx-auto">
+      <a href="https://pradeepshetty1.github.io" target="_blank"
+         class="inline-block bg-blue-700 hover:bg-blue-800 text-white text-lg font-semibold py-3 px-6 rounded-full shadow-md transition duration-300">
+        🌐 Visit My Portfolio Website
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center">
-    <p>&copy; 2024 O365 Administrator and Python Developer. All rights reserved.</p>
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    <p>&copy; 2024 Pradeep Shetty — Built with 💻 + ☕ + TailwindCSS</p>
   </footer>
 
 </body>
